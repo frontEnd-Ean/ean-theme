@@ -1,0 +1,64 @@
+name: EAN Theme
+type: theme
+description: ''
+version: 1.0
+core: 8.x
+
+# stylesheets-remove:
+#   - /libraries/scss/bootstrap.scss
+
+
+libraries:
+  # - ean_theme/bootstrap
+  - ean_theme/global-styling
+
+base theme: bootstrap_barrio
+
+
+regions:
+  # EAN Regions
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  menu_redes: 'Menú redes'
+  menu_recursos: 'Menú recursos'
+  menu_audiencias: 'Menú audiencias'
+  slider_seccion: 'Slider sección'
+  slider_seccion_mobile: 'Slider mobile sección'
+  titulo_seccion: 'Título sección'
+  content: Content
+  sidebar_first: 'Sidebar first'
+  historias_seccion: 'Historias sección'
+  emprendedor_seccion: 'Emprendedor sección'
+  noticias_seccion: 'Noticias sección'
+  eventos_seccion: 'Eventos sección'
+  convenios_seccion: 'Convenios sección'
+  porques_seccion: 'Porques sección'
+  enlaces_seccion: 'Enlaces de interés sección'
+  medio_seccion: 'Medio universitario Carrusel sección'
+  medio_contenido: 'Medio universitario ontenido sección'
+  suscripcion_seccion: 'Suscripción Newsletter sección'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_fourth: 'Footer fourth'
+  footer_fifth: 'Footer fifth'
+  legales_primero: 'Legales primero'
+  legales_segundo: 'Legales segundo'
+  legales_tercero: 'Legales tercero'
+  none: '--none--'
+  bloques_internos: 'Bloques internos'
+
+
+  top_header: 'Top Header'
+  top_header_form: 'Top Header Form'
+  header_form: 'Header Form'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  breadcrumb: Breadcrumb
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+  featured_bottom_second: 'Featured bottom second'
+  featured_bottom_third: 'Featured bottom third'

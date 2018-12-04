@@ -1,0 +1,90 @@
+<header class="principal">
+  <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+      <div class="row no-gutters">
+        <div class="col-12 col-lg-2 col-xl-3">
+          <div class="logo-contenedor d-flex justify-content-between">
+            {{ page.header }}
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-10 col-xl-9 collapse navbar-collapse" id="navbarNav">
+          <div class="cont-menus d-flex">
+            <div class="w-100 menu-top order-3 order-lg-1">
+              <div class="row no-gutters">
+                <div class="col-12 col-lg-6 col-xl-5">
+                  {{ page.menu_audiencias }}
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-5">
+                  {{ page.menu_recursos }}
+
+                </div>
+                <div class="col-12 col-lg-12 col-xl-2 d-none d-lg-block">
+                  {{ page.menu_redes }}
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="w-100 menu-principal order-4 order-lg-2">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  {{ page.secondary_menu }}
+
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="w-100 menu-tipo-titulacion d-lg-none order-2 order-lg-3">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  {{ page.primary_menu }}
+                </div>
+              </div>
+
+            </div>
+
+            <div class="w-100 menu-redes-mobile d-block d-lg-none order-4 order-lg-4">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  {{ page.menu_redes }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <style>
+header.principal {padding: 15px 0px 0px;}
+header.principal .header-textoAcreditacion {background-color: #2e2e2e;}
+header.principal .header-textoAcreditacion p {line-height: 0.95rem;font-size:1rem;}
+header.principal .header-textoAcreditacion p span {font-size: 0.75rem;font-weight: normal;}
+</style>
+  
+  <div class="col-12 py-3 header-textoAcreditacion"><p class="text-white text-center font-weight-bold" >Acreditada en Alta Calidad <span class="font-weight-normal">Res. nº. 29499 del Mineducación. 29/12/17 vigencia 28/12/21</span></p>
+        </div>
+</header>
+
+
+
+<div class="w-100 menu-tipo-titulacion d-none d-lg-block">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-12 d-flex cont-menu-verde">
+        <div class="logo-fixed">
+          {{ page.header }}
+        </div>
+        {{ page.primary_menu }}
+      </div>
+    </div>
+  </div>
+</div>

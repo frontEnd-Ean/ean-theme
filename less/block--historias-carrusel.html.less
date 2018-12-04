@@ -1,0 +1,281 @@
+// main: ./_main.less
+
+.historias-carrusel {
+  .slide__content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .slick-next {
+    right: 15px;
+    @media(min-width: 768px) {
+      right: 0;
+    }
+    @media(min-width: 1200px) {
+      right: -15px;
+    }
+  }
+
+  .slick-prev {
+    left: 15px;
+    @media(min-width: 768px) {
+      left: 0;
+    }
+    @media(min-width: 1200px) {
+      left: -15px;
+    }
+  }
+
+  .slick-arrow {
+    background-color: fade(@color_gris_fondo, 80%);
+    @media(min-width: 1200px) {
+      background-color: fade(@color_gris_fondo, 50%);
+    }
+  }
+
+  .slick-slide {
+    @media(min-width: 768px) {
+      width: 240px;
+      padding: 0 15px;
+    }
+    @media(min-width: 992px) {
+      width: 360px;
+    }
+    @media(min-width: 1200px) {
+      width: 285px;
+    }
+  }
+
+  .slick__slide {
+    position: relative;
+  }
+
+  .medium-block-grid-2 > .grid {
+    @media(min-width: 768px) {
+      width: 100%;
+      padding: 0 8px;
+    }
+  }
+
+  .cont-vermas,
+  .views-field-view-node {
+    position: absolute;
+    bottom: 8%;
+    right: 15px;
+    z-index: 10;
+
+    a {
+      .vermas;
+    }
+  }
+
+  [class*="block-grid-"] > .grid {
+    padding: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .slick-arrow::before {
+    color: #000;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    top: 2px;
+    position: relative;
+    opacity: 1;
+  }
+
+  .slick-next,
+  .slick-prev {
+    @media(min-width: 1200px) {
+      &:hover {
+        &:before {
+          color: @color_verde;
+        }
+      }
+    }
+  }
+  @media(min-width: 768px) {
+    .slick-list {
+      position: relative;
+
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 90px;
+        height: 100%;
+        z-index: 1;
+      }
+
+      &:before {
+        left: 0;
+        .degrade_blanco_izq;
+      }
+
+      &:after {
+        right: 0;
+        .degrade_blanco_der;
+      }
+    }
+  }
+
+  .slick__slider {
+    margin: 0;
+    @media(min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  .slick {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 320px;
+      @media(min-width: 360px) {
+        max-width: 360px;
+      }
+      @media(min-width: 375px) {
+        max-width: 375px;
+      }
+      @media(min-width: 411px) {
+        max-width: 411px;
+      }
+      @media(min-width: 425px) {
+        max-width: 425px;
+      }
+      @media(min-width: 768px) {
+        max-width: unset;
+      }
+    }
+
+    h4 {
+      width: 320px;
+      padding-right: 45px;
+      @media(min-width: 375px) {
+        width: 375px;
+      }
+      @media(min-width: 425px) {
+        width: 425px;
+      }
+      @media(min-width: 768px) {
+        width: unset;
+      }
+
+      a {
+        padding: 15px;
+        color: @color_negro;
+        display: block;
+        min-height: 75px;
+      }
+    }
+  }
+  //Cuando tiene solo 1 elemento
+  .unslick .slick__slide {
+    @media(min-width: 768px) {
+      width: 70%;
+    }
+    @media(min-width: 1200px) {
+      width: 60%;
+    }
+  }
+}
+// Bloque en el home
+
+#slick-views-frontpage-historia-de-emprendimiento-1 {
+  .slick-next {
+    right: 0;
+    @media(min-width: 992px) {
+      right: -15px;
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+    @media(min-width: 992px) {
+      left: -15px;
+    }
+  }
+
+  .slick-slide {
+    @media(min-width: 768px) {
+      width: 360px;
+      padding: 0;
+    }
+    @media(min-width: 992px) {
+      width: 320px;
+      padding: 0 15px;
+    }
+    @media(min-width: 1200px) {
+      width: 253px;
+    }
+  }
+
+  .slick-arrow {
+    background-color: fade(@color_gris_fondo, 80%);
+    @media(min-width: 1200px) {
+      background-color: fade(@color_gris_fondo, 50%);
+    }
+  }
+  @media(min-width: 768px) {
+    .slick-list {
+      &:before {
+        left: 0;
+        .degrade_gris_izq;
+      }
+
+      &:after {
+        right: 0;
+        .degrade_gris_der;
+      }
+    }
+  }
+}
+
+.universidad {
+  .historias-carrusel {
+    position: relative;
+    margin: 30px -15px 60px;
+    padding: 15px 0 30px;
+    @media(min-width: 768px) {
+      margin: 30px -38px;
+      padding: 15px 38px 45px;
+    }
+    @media(min-width: 1200px) {
+      padding: 15px 38px 60px;
+    }
+
+    h2 {
+      margin: 15px 0;
+      @media(min-width: 768px) {
+        margin: 15px 0;
+      }
+      @media(min-width: 1200px) {
+        margin: 30px 0;
+      }
+    }
+    .slick-slide {
+      @media(min-width: 768px) {
+        width: 230px;
+      }
+      @media(min-width: 992px) {
+        width: 310px;
+      }
+      @media(min-width: 1200px) {
+        width: 280px;
+      }
+    }
+
+    .view-footer {
+      text-align: center;
+    }
+  }
+}

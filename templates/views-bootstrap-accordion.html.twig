@@ -1,0 +1,31 @@
+<style>
+.accordion .card-header h5 i,.accordion .card-header h5 svg {
+    color: #3BAC53;
+}
+</style>
+
+
+<div class="col-12">
+   <section class="col-12 px-0 clearfix">
+      <div id="{{ id }}" class="accordion">
+         {% for key, row in rows -%}
+         <div class="col-12 mx-auto card mb-1 px-0">
+            <div class="panel-heading card-header text-center bg-light py-1">
+               <h5 class="panel-title my-0">
+                  <a class="accordion-toggle text-dark my-2 d-block" data-toggle="collapse" data-parent="#{{ id }}" href="#{{ id }}-collapse-{{ key }}">
+                  {{row.title}}
+                  <i class="fas fa-chevron-circle-down float-right"></i>        
+                  </a>
+               </h5>
+            </div>
+            <div id="{{ id }}-collapse-{{ key }}" class="panel-collapse collapse" data-parent="#{{ id }}">
+               <div class="panel-body">
+                  {{row.content}}
+               </div>
+            </div>
+         </div>
+         {%- endfor %}
+      </div>
+   </section>
+</div>
+

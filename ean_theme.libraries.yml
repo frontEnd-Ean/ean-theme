@@ -1,0 +1,10 @@
+global-styling:
+  version: VERSION
+  js:
+    js/jquery.spincrement.min.js: {}
+    js/jquery.visible.min.js: {}
+    js/_main.js: {}
+  css:
+    theme:
+      css/d8.css: {}
+      css/_main.css: { weight: 1 }
